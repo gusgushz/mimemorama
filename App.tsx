@@ -4,7 +4,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from './src/navigator/ScreenProps';
 //prettier-ignore
 import { HomeScreen, ReactNativeClusterer, ReactNativeMapClustering, ReactNativeClusterMap, ReactNativeSuperCluster, ReactNativeMapsMarkerCluster,Pikachu, Empoleon, PokemonScreen,NewScreen } from './src/screens/index';
-import { Image, TouchableOpacity } from 'react-native';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -22,7 +21,7 @@ const MyStack = () => {
           headerStyle: { backgroundColor: colors.background },
           headerBackImageSource: require('./src/assets/icons/backArrowBlack.png'),
         }}
-        initialRouteName="Home">
+        initialRouteName="NewScreen">
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
         <Stack.Screen name="ReactNativeClusterer" component={ReactNativeClusterer} options={{ headerShown: true }} />
         <Stack.Screen

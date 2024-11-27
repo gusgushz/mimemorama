@@ -3,6 +3,7 @@ import { View, Text, ImageBackground, Image, Dimensions } from 'react-native';
 import { Clusterer } from 'react-native-clusterer';
 import Supercluster from 'react-native-clusterer/lib/typescript/types';
 import MapView, { Marker, Callout, MapMarker } from 'react-native-maps';
+import { useNavigation } from '@react-navigation/native';
 
 const initialRegion = {
   latitude: 20.967584,
